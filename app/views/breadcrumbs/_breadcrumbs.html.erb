@@ -1,0 +1,9 @@
+<ul class="breadcrumbs">
+  <% breadcrumbs.each do |breadcrumb| %>
+    <% if breadcrumb.link? %>
+      <li><%= link_to breadcrumb.label, breadcrumb.url %></li>
+    <% else %>
+      <li><%= breadcrumb.label %></li>
+    <% end %>
+  <% end %>
+</ul>
