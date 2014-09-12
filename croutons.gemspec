@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.license = "MIT"
   s.files = `git ls-files -z`.split("\x0")
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
-  s.add_dependency "rails", "~> 4.1.5"
+  s.add_dependency "rails", ">= 4.1.0"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
 end
