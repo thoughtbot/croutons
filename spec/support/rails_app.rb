@@ -32,9 +32,9 @@ class RailsApp
     end
   end
 
-  def add_breadcrumbs_to_layout
-    transform_file(path("app/views/layouts/application.html.erb")) do |content|
-      content.sub("<body>", "<body>\n<%= breadcrumbs %>")
+  def add_to_view(name, content_to_add)
+    transform_file(path("app/views/#{name}.html.erb")) do |content|
+      content << content_to_add
     end
   end
 

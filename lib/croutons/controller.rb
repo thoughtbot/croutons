@@ -12,10 +12,11 @@ module Croutons
 
     private
 
-    def breadcrumbs
+    def breadcrumbs(objects = {})
       template = lookup_context.find_template(@_template, @_prefixes)
       template_identifier = template.virtual_path.gsub('/', '_')
-      breadcrumbs = breadcrumb_trail.breadcrumbs(template_identifier, view_assigns)
+      objects.reverse_merge!(view_assigns)
+      breadcrumbs = breadcrumb_trail.breadcrumbs(template_identifier, objects)
       render_to_string(
         partial: 'breadcrumbs/breadcrumbs',
         locals: { breadcrumbs: breadcrumbs },
