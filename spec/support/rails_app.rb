@@ -19,7 +19,7 @@ class RailsApp
 
   def scaffold_model(name, *columns)
     in_app_directory do
-      run "rails generate scaffold #{name} #{columns.join(' ')} --test-framework=none"
+      run "rails generate scaffold #{name} #{columns.join(' ')} --force"
     end
   end
 
@@ -45,7 +45,9 @@ class RailsApp
   private
 
   def create_rails_app
-    run "bundle exec rails new #{path} --skip-bundle --force"
+    run "bundle exec rails new #{path} --skip-gemfile --skip-bundle "\
+      "--skip-git --skip-keeps --skip-spring --skip-javascript "\
+      "--skip-test-unit --no-rc --skip-sprockets --force"
   end
 
   def disable_class_caching
@@ -55,7 +57,8 @@ class RailsApp
   end
 
   def customize_gemfile
-    File.open(path("Gemfile"), "a") do |f|
+    File.open(path("Gemfile"), "w") do |f|
+      f << "source 'https://rubygems.org'\n"
       f << "gem 'croutons', path: '#{PROJECT_ROOT}'\n"
       f << "gem 'rspec-rails', group: :test\n"
       f << "gem 'capybara', group: :test\n"
