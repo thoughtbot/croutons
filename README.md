@@ -103,3 +103,18 @@ License
 Croutons is Copyright © 2016 Calle Erlandsson, George Brocklehurst, and
 thoughtbot. It is free software, and may be redistributed under the terms
 specified in the LICENSE file.
+
+About thoughtbot
+----------------
+
+![thoughtbot](https://thoughtbot.com/logo.png)
+
+Croutons is maintained and funded by thoughtbot, inc.
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+We love open source software!
+See [our other projects][community].
+We are [available for hire][hire].
+
+[community]: https://thoughtbot.com/community?utm_source=github
+[hire]: https://thoughtbot.com/hire-us?utm_source=github
