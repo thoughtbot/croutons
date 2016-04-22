@@ -100,6 +100,6 @@ Please see [the example below](#example) for further reference.
 License
 -------
 
-Croutons is Copyright © 2014 Calle Erlandsson, George Brocklehurst, and
+Croutons is Copyright © 2016 Calle Erlandsson, George Brocklehurst, and
 thoughtbot. It is free software, and may be redistributed under the terms
 specified in the LICENSE file.
