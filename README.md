@@ -93,7 +93,7 @@ Please see [the example below](#example) for further reference.
 
       def posts_show
         posts_index
-        breadcrumb(objects[:post].title, post_path(objects[:post])
+        breadcrumb(objects[:post].title, post_path(objects[:post]))
       end
     end
 
