@@ -15,7 +15,7 @@ module Croutons
       build_breadcrumbs
     end
 
-    def method_missing(name, *args, &block)
+    def method_missing(name, *args)
       if respond_to_missing?(name)
         Rails.application.routes.url_helpers.public_send(name, *args)
       else
