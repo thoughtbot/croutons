@@ -47,7 +47,7 @@ class RailsApp
   def create_rails_app
     run "bundle exec rails new #{path} --skip-gemfile --skip-bundle "\
       "--skip-git --skip-keeps --skip-spring --skip-javascript "\
-      "--skip-test-unit --no-rc --skip-sprockets --force"
+      "--skip-test-unit --no-rc --skip-sprockets --skip-bootsnap --force"
   end
 
   def disable_class_caching
