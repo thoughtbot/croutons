@@ -1,3 +1,4 @@
 .bundle/
 pkg/
 spec/dummy_app
+*.lock

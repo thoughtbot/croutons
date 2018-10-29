@@ -48,6 +48,10 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    appraisal (2.2.0)
+      bundler
+      rake
+      thor (>= 0.14.0)
     arel (9.0.0)
     builder (3.2.3)
     capybara (2.3.0)
@@ -149,10 +153,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  appraisal
   capybara
   croutons!
   rspec-rails
   sqlite3
 
 BUNDLED WITH
-   1.16.6
+   1.17.1
