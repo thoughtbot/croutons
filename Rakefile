@@ -5,3 +5,15 @@ rescue LoadError
 end
 
 Bundler::GemHelper.install_tasks
+
+task(:default).clear
+if ENV['APPRAISAL_INITIALIZED'] || ENV['TRAVIS']
+  require 'rspec/core'
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec)
+  task default: :spec
+else
+  require 'appraisal'
+  Appraisal::Task.new
+  task default: :appraisal
+end
