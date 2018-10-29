@@ -45,6 +45,7 @@ class RailsApp
   private
 
   def create_rails_app
+    FileUtils.remove_dir(path)
     run "bundle exec rails new #{path} --skip-gemfile --skip-bundle "\
       "--skip-git --skip-keeps --skip-spring --skip-javascript "\
       "--skip-test-unit --no-rc --skip-sprockets --skip-bootsnap --force"
