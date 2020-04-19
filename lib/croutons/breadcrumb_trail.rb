@@ -8,8 +8,8 @@ module Croutons
 
     attr_reader :breadcrumbs
 
-    def initialize(template_identifer, objects = {})
-      @template_identifer = template_identifer
+    def initialize(template_identifier, objects = {})
+      @template_identifier = template_identifier
       @objects = objects.with_indifferent_access
       @breadcrumbs = []
       build_breadcrumbs
@@ -29,10 +29,10 @@ module Croutons
 
     private
 
-    attr_reader :template_identifer, :objects
+    attr_reader :template_identifier, :objects
 
     def build_breadcrumbs
-      send(template_identifer)
+      send(template_identifier)
       labelize_last
     end
 
