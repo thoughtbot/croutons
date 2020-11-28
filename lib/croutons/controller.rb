@@ -16,6 +16,7 @@ module Croutons
       template = lookup_context.find_template(@_template, @_prefixes)
       template_identifier = template.virtual_path.gsub('/', '_')
       objects.reverse_merge!(view_assigns)
+      objects[:params] = params
       breadcrumbs = breadcrumb_trail.breadcrumbs(template_identifier, objects)
       render_to_string(
         partial: 'breadcrumbs/breadcrumbs',
