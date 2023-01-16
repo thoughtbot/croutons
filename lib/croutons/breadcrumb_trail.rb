@@ -1,3 +1,4 @@
+require 'ruby2_keywords'
 require 'croutons/breadcrumb'
 
 module Croutons
@@ -44,7 +45,7 @@ module Croutons
       breadcrumbs << Breadcrumb.new(*args)
     end
 
-    def t(*args)
+    ruby2_keywords def t(*args)
       I18n.t(*args)
     end
   end
