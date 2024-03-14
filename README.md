@@ -100,21 +100,9 @@ Please see [the example below](#example) for further reference.
 License
 -------
 
-Croutons is Copyright © 2014-2017 Calle Erlandsson, George Brocklehurst, and
+Croutons is Copyright © 2014 Calle Erlandsson, George Brocklehurst, and
 thoughtbot. It is free software, and may be redistributed under the terms
 specified in the LICENSE file.
 
-About thoughtbot
-----------------
-
-![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
-
-Croutons is maintained and funded by thoughtbot, inc.
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-We love open source software!
-See [our other projects][community].
-We are [available for hire][hire].
-
-[community]: https://thoughtbot.com/community?utm_source=github
-[hire]: https://thoughtbot.com/hire-us?utm_source=github
+<!-- START /templates/footer.md -->
+<!-- END /templates/footer.md -->
