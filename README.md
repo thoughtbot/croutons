@@ -1,3 +1,7 @@
+## Deprecated as of September 20, 2024
+
+This project is no longer maintained. If you wish to continue to develop this code yourself, we recommend you fork it.
+
 Croutons
 ========
 
